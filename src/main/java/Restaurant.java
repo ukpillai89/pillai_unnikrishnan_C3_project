@@ -62,20 +62,20 @@ public class Restaurant {
         return name;
     }
 
-//    public int calculateTotalOrderValue(String[] items){
-//        int total = 0;
-//        for (String item : items){
-//            total += getCostofItem(item);
-//        }
-//        return total;
-//    }
-//
-//    public int getCostofItem(String item){
-//        for (Item i : menu){
-//            if (i.getName().equalsIgnoreCase(item)){
-//                return i.getPrice();
-//            }
-//        }
-//        return 0;
-//    }
+    public int calculateTotalOrderValue(String[] items){
+        int total = 0;
+        for (String item : items){
+            total += getCostofItem(item);
+        }
+        return total;
+    }
+
+    public int getCostofItem(String item){
+        for (Item i : menu){
+            if (i.getName().equalsIgnoreCase(item)){
+                return i.getPrice();
+            }
+        }
+        return 0;
+    }
 }
