@@ -62,9 +62,9 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-//    @Test
-//    public void calculate_total_amount_after_selecting_items_from_menu(){
-//        String[] order = {"Sweet corn soup", "Vegetable lasagne"};
-//        assertEquals(388,restaurant.calculateTotalOrderValue(order));
-//    }
+    @Test
+    public void calculate_total_amount_after_selecting_items_from_menu(){
+        String[] order = {"Sweet corn soup", "Vegetable lasagne"};
+        assertEquals(388,restaurant.calculateTotalOrderValue(order));
+    }
 }
